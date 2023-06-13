@@ -1,8 +1,16 @@
-function add(number1, number2) {
-  return number1 + number2;
-}
-const number1 = '5'
-const number2 = 2.8
+function add(n1: number, n2: number, printResult: boolean, resultPhrase: string) {
+const result = n1 + n2
 
-const result = add(number1, number2);
-console.log(result);
+  if (printResult) {
+    console.log(resultPhrase + result);
+  } else {
+    return result;
+  }
+}
+const number1 = 5;
+const number2 = 2.8;
+const printResult = true;
+const resultPhrase = 'result is:'
+
+add(number1, number2, printResult, resultPhrase);
+
