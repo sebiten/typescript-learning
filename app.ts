@@ -1,31 +1,53 @@
-  // OBJECTS
+// OBJECTS
 
-const person: {
+// const person: {
+//   name: string;
+//   age: number; // en estos objetos(objetos con tipados de informacion) se utilizan ; no las ,
+// } = {
+//   // good way with aditional types to name and age
+//   name: "Sebastian",
+//   age: 24,
+// };
+
+const persondos: {
   name: string;
-  age: number; // en estos objetos(objetos con tipados de informacion) se utilizan ; no las ,
+  age: number;
+  hobbies: string[];
+  role: [number, string]; // TUPLA es cuando llega un indice y la descripcion de dicho indice
+
 } = {
-  // good way with aditional types to name and age
   name: "Sebastian",
   age: 24,
+  hobbies: ["Sports", "Cooking"],
+  role: [2, 'author']
 };
 
-const persondos = {
+persondos.role.push('admin') // funciona porqyue push esta permitido en tuplas
+// personados.role[1] = 10; no funciona!
+
+// ENUM 
+ const person = {
   name: "Sebastian",
   age: 24,
-  hobbies: ['Sports', 'Cooking']
+  hobbies: ["Sports", "Cooking"],
+  
 };
+
+
+
+
+
 
 // ARRAYS
 
 // let favoriteactivities: any[]; ====> este type any soporta todo los tipos de datos
 
 let favoriteactivities: string[];
-favoriteactivities = ['Sports']
+favoriteactivities = ["Sports"];
 
 console.log(persondos.name);
 
 for (const hobby of persondos.hobbies) {
   console.log(hobby.toUpperCase());
   // console.log(hobby.map());  !! ERROR MAL MAP ES PARA OBJETOS NO PARA STRING
-  
 }
