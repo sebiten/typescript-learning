@@ -37,10 +37,10 @@ enum Role { ADMIN, READ_ONLY, AUTHOR };
   
 };
 
-if (person.role === ADMIN) {
-  console.log('is admin');
+// if (person.role === ADMIN) {
+//   console.log('is admin');
   
-}
+// }
 
 // ARRAYS
 
